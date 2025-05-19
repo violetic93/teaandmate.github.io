@@ -4,117 +4,100 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tea & Mate</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Nanum Myeongjo', serif;
-      background-color: #fffdf9;
       color: #333;
     }
     header {
-      background: url('https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
-      height: 90vh;
+      background: url('./a.png') center/cover no-repeat;
+      height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      color: #fff;
+      position: relative;
     }
-    header img {
+    header img.logo {
+      position: absolute;
+      top: 20px;
+      left: 30px;
       width: 160px;
-      margin-bottom: 20px;
     }
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    h2 {
+    .intro-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      max-width: 600px;
+      border-radius: 12px;
       text-align: center;
-      font-size: 2em;
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+    section.paper {
+      background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .paper h2 {
+      font-family: 'Nanum Brush Script', cursive;
+      font-size: 2.5em;
       margin-bottom: 40px;
     }
-    .blending {
-      background-color: #f3f0e9;
-      padding: 40px;
-      border-radius: 12px;
-    }
-    .product-grid {
+    .photo-row {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
-      justify-content: center;
     }
-    .product {
-      background: #fff;
-      border: 1px solid #ddd;
+    .photo-row img {
+      width: 280px;
       border-radius: 8px;
-      padding: 20px;
-      text-align: center;
-      width: 200px;
-    }
-    .product img {
-      width: 100%;
-      border-radius: 4px;
     }
     footer {
-      background: #333;
+      background: url('https://www.transparenttextures.com/patterns/beige-paper.png');
       color: #eee;
+      background-color: #3c3c3c;
       padding: 40px 20px;
       text-align: center;
-      font-size: 0.9em;
+      font-size: 0.85em;
+      line-height: 1.6;
+    }
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 8px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Tea_Cup_Icon.svg/1200px-Tea_Cup_Icon.svg.png" alt="Tea & Mate 로고" />
-    <h1>당신의 하루에 친구가 되어줄 한 잔, Tea & Mate</h1>
+    <img class="logo" src="./logo.png" alt="Tea & Mate 로고" />
+    <div class="intro-box">
+      <p>
+        Tea Mate는 건강한 허브와 자연에서 온 재료로, 몸과 마음을 위한 블렌딩 티를 만듭니다.<br />
+        우리는 단순히 ‘차’를 파는 것이 아니라, 당신이 스스로를 더 아끼고 돌볼 수 있는 작은 쉼표를 제공합니다.
+      </p>
+    </div>
   </header>
 
-  <section>
-    <h2>브랜드 소개</h2>
-    <p>Tea & Mate는 건강한 허브와 자연에서 온 재료로, 몸과 마음을 위한 블렌딩 티를 만듭니다.<br />
-    우리는 차로 소통하며, 감정을 돌보는 따뜻한 쉼표가 되고자 합니다.</p>
-  </section>
-
-  <section class="blending">
-    <h2>오늘의 감성 블렌딩</h2>
-    <p>라벤더 + 캐모마일 + 레몬밤 → <strong>‘마음 진정 블렌딩’</strong><br />
-    불안한 날, 당신을 위로할 감성 한 잔</p>
-  </section>
-
-  <section>
-    <h2>대표 제품</h2>
-    <div class="product-grid">
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1584270354949-1f099a15d00e?auto=format&fit=crop&w=500&q=80" alt="진정 티" />
-        <p>마음 진정 블렌딩 티</p>
-        <p>12,000원</p>
-      </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?auto=format&fit=crop&w=500&q=80" alt="집중력 티" />
-        <p>집중력 향상 블렌딩 티</p>
-        <p>13,500원</p>
-      </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1613488251518-39e6d1ff8753?auto=format&fit=crop&w=500&q=80" alt="면역 티" />
-        <p>면역 강화 블렌딩 티</p>
-        <p>15,000원</p>
-      </div>
+  <section class="paper">
+    <h2>우리는 지향합니다.</h2>
+    <div class="photo-row">
+      <img src="./b.png" alt="소개 이미지 1" />
+      <img src="./c.png" alt="소개 이미지 2" />
+      <img src="./d.png" alt="소개 이미지 3" />
     </div>
   </section>
 
   <footer>
-    <p>Tea & Mate © 2025. 당신의 하루에 친구가 되어줄 한 잔.</p>
-    <p>email: teafriend@mate.com | Instagram: @teaandmate</p>
+    <p>
+      이용약관 | 개인정보취급방침 | 제휴문의
+    </p>
+    <p>
+      Tea & Mate © 2025. 당신의 하루에 친구가 되어줄 한 잔.<br />
+      email: teafriend@mate.com | Instagram: @teaandmate
+    </p>
   </footer>
 </body>
 </html>
